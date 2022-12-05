@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\AuthOtpController;
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+Route::middleware('auth')->group(function (){
+    Route::get('/login', [AuthOtpController::class, 'index'])->name('login');
+    Route::post('/otp/generate', [AuthOtpController::class, 'generate'])->name('otp.generate');
+    Route::get('/otp/verification/{user_id}', [AuthOtpController::class, 'verification'])->name('otp.verification');
+    Route::post('otp/login', [AuthOtpController::class, 'loginWithOtp'])->name('otp.login');
+
+    Route::get('/dashboard', [ProfileController::class, 'index'])->name('dashboard');
+
 });

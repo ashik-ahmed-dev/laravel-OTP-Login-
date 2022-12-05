@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "5da5666f46756e15c3fc2c348febe3a7",
     "packages": [
         {
             "name": "brick/math",
@@ -896,6 +896,67 @@
                 }
             ],
             "time": "2022-10-26T14:07:24+00:00"
+        },
+        {
+            "name": "iqbalhasandev/laravel-bulksmsbd",
+            "version": "V2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iqbalhasandev/laravel-bulksmsbd.git",
+                "reference": "9ddc887a9a927287f8159a610d68b66ecbd98156"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iqbalhasandev/laravel-bulksmsbd/zipball/9ddc887a9a927287f8159a610d68b66ecbd98156",
+                "reference": "9ddc887a9a927287f8159a610d68b66ecbd98156",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "iqbalhasandev\\bulksmsbd\\BulkSMSBDServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "iqbalhasandev\\bulksmsbd\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "IQBAL HASAN",
+                    "email": "iqbalhasan.dev@gmail.com"
+                }
+            ],
+            "description": "Integrate SMS system into your project easily with bulk sms bd's API via this plugin.",
+            "keywords": [
+                "bulksms",
+                "bulksmsbd",
+                "laravel-bulksms",
+                "laravel-bulksmsbd",
+                "laravel-package",
+                "laravel-plugin",
+                "laravel-sms-gateway",
+                "library",
+                "package",
+                "plugin",
+                "sms-api"
+            ],
+            "support": {
+                "issues": "https://github.com/iqbalhasandev/laravel-bulksmsbd/issues",
+                "source": "https://github.com/iqbalhasandev/laravel-bulksmsbd/tree/V2.1"
+            },
+            "time": "2020-11-08T03:11:31+00:00"
         },
         {
             "name": "laravel/framework",
